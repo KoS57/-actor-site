@@ -1,0 +1,18 @@
+.biograf{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:auto;
+}
+.biogFoto{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.biogFoto img{
+    width:100%;
+    height: 100%;
+
+}
+.text{
+    background-color: #e5dcd2;
+}

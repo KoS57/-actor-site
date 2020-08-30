@@ -1,0 +1,17 @@
+.main{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+.main_foto img{
+ max-width:100%;
+
+}
+  
+
+    
+
+
+

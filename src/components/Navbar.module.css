@@ -1,0 +1,14 @@
+
+.name{
+    display: grid;
+    /* grid-template-rows:   ; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+
+}
+
+.name .text {
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+    align-self: center;
+    justify-self: center;
+}

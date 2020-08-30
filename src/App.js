@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import NavbarMenu from './components/Navbar'
+import Main from './components/Main'
+import Biograf from './components/Biograf'
+import Creation from './components/Creation'
+import Gallery from './components/Gallery'
+
+import { BrowserRouter, Route } from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='app'>
+        <Header />
+        <NavbarMenu />
+        <div className='app-content'>
+
+          <Route exact path='/' component={Main} />
+          <Route path='/main' component={Main} />
+          <Route path='/biograf' component={Biograf} />
+          <Route path='/creation' component={Creation} />
+          <Route path='/gallery' component={Gallery} />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
